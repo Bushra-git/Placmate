@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F7FA;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4A90E2, #50E3C2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FF6F61;
+}
+
+.btn {
+  background-color: #FF6F61;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #E65A50;
+  transform: scale(1.05);
+}
+
+.btn.secondary {
+  background-color: #4A90E2;
+  margin-left: 10px;
+}
+
+.btn.secondary:hover {
+  background-color: #3a7bc8;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #4A90E2;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #4A90E2;
+}
+
+/* Venue List Styles */
+.venue-list, .equipment-list {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.venue-list h2, .equipment-list h2 {
+  font-size: 2rem;
+  color: #4A90E2;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filters input, .filters select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 150px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filters input:focus, .filters select:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.filters button:hover {
+  background-color: #E65A50;
+  transform: scale(1.05);
+}
+
+.venue-cards, .equipment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.venue-card, .equipment-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.venue-card:hover, .equipment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.venue-card h3, .equipment-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #4A90E2;
+}
+
+.venue-card p, .equipment-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Booked Venues/Equipment Section */
+.booked-venues, .booked-equipment {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booked-venues h2, .booked-equipment h2 {
+  font-size: 2rem;
+  color: #4A90E2;
+  margin-bottom: 20px;
+}
+
+.bookings-table-container {
+  overflow-x: auto;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bookings-table th, .bookings-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.bookings-table th {
+  background-color: #4A90E2;
+  color: white;
+  font-weight: 600;
+}
+
+.bookings-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.bookings-table .cancel-btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4A90E2;
+  color: white;
+}
+
+.home{
+  background-image: url('./vit-campus.png');
+  background-size: cover;        /* Scales image to cover the page */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  background-position: center
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn.secondary {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .bookings-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
