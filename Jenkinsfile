@@ -10,7 +10,7 @@ pipeline {
 
         stage('Deploy to Nginx') {
             steps {
-                bat 'xcopy /Y index.html C:\\nginx\\html\\'
+                bat 'xcopy /E /I /Y * C:\\nginx\\html\\'
             }
         }
     }
